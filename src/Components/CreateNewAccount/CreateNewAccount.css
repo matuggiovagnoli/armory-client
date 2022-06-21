@@ -1,0 +1,129 @@
+form {
+    position: relative;
+    border-radius: 5px;
+    border: 2px solid rgb(236, 229, 229);
+    margin: auto;
+    width: 40rem;
+    height: max-content;
+    background-color: rgb(230, 230, 230);
+}
+
+h2 {
+    position: relative;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 45px;
+    margin-left: 1rem;
+    
+}
+
+h2::before{
+    content: '';
+    width: 150px;
+    height: 5px;
+    margin-left: 10px;
+    position: absolute;
+    top: 50px;
+    left: -4px;
+    right: -2px;
+    bottom: 10px;
+    background: orange;
+    z-index: 1;
+}
+
+
+h1 {
+    width: fit-content;
+    position: relative;
+    background: rgb(14, 13, 13);
+    color: whitesmoke;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    font-size: 60px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+h1::before{
+    content: '';
+    width: 90px;
+    height: 50px;
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -2px;
+    bottom: -2px;
+    background: orange;
+    z-index: -1;
+}
+
+h1::after{
+    content: '';
+    width: 90px;
+    height: 50px;
+    position: absolute;
+    right: -4px;
+    bottom: -4px;
+    background: orange;
+    z-index: -1;
+}
+
+
+
+.label_input {
+    padding: 2px;
+    height: 3rem;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 40px;
+    
+    
+}
+
+label {
+    margin-bottom: 5px;
+    width: fit-content;
+    display: flex;
+}
+
+input {
+    width: 35rem;
+    height: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.error_messege {
+    color: red;
+    margin: auto;
+}
+
+
+
+.label_input_checkbox{
+    box-sizing: border-box;
+}
+
+.checkbox_input {
+    width: 20px;
+    margin-left: 117px;
+}
+
+.label_checkbox{
+    display: inline-block;
+    position: absolute;
+    margin-top: 8px;
+}
+
+button{
+    width: fit-content;
+    height: 30px;
+    margin: 10px;
+    margin-left: 25px;
+    font-size: medium;
+    background-color: rgb(216, 152, 34);
+    border: none;
+}
+
+button:hover{
+    background-color: black;
+    color: rgb(216, 152, 34);
+}
